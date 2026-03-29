@@ -57,6 +57,7 @@ bottle = "water"
 # print("Samson " + "Meshach")
 name = "Samson"
 age = 30
+
 # print("My name is "+name)
 # print("I am "+str(age)+" years old")
 
@@ -69,4 +70,105 @@ age = 30
 # name, course, occupation, age, 
 
 
-# 3. Python Datatypes
+# Python Datatypes
+
+# 1. Text type: str 
+name = "Samson"
+# print(type(name))
+# 2. Number Types: int, float, complex
+# num = 45
+# num = 45.5
+# num = 4 + 2j
+# print(type(num))
+
+# 3. Sequence type: list [], tuple (), range
+
+# names = ['Ayo', 'Lola', 'Femi']
+names = ('Ayo', 'Lola', 'Femi')
+# print(type(names))
+
+# nums = list(range(20))
+# nums = list(range(2, 20, 1))
+# print(nums)
+
+# 4. Boolean Type: bool 
+isActive = False
+
+# 5. Set type: set
+# names =  {'Ayo', 'Lola', 'Femi'}
+# nums = {1, 4, 6, 5, 3, 2}
+# print(nums)
+
+# 6. Mapping Types: Dict
+student = {
+    "name": "Ayo Ade",
+    "course": "Data science",
+    "age": 30
+}
+# print(type(student))
+# print(student["age"])
+
+# 7. NoneType: None
+name = None
+# print(name)
+
+
+# num = 5
+# print(float(num))
+
+
+# Python Operator
+# 1. Arithmetic operator: +, -, /, *, **, //, %
+
+# print(5//2)
+# print(5**2)
+# print(5 % 2)
+
+# 2. Assignment operator: =, +=, -=, /=, *= etc.
+# num = 5
+# num += 1
+# num -= 1
+# print(num)
+
+# 3. comparison operator: ==, !=, > , < , >=, <=
+# num = 4
+# print(num != 5)
+
+
+
+# Conditional statement 
+# if num == 5:
+#     print('Valid')
+
+# else:
+#     print("Invalid")
+
+
+# print(len("Dare"))
+# password = input("Password: ")
+
+# if len(password) >= 8:
+#     print("Password is valid")
+# else:
+#     print('The length of password must be >= 8')
+
+
+# USSD app
+ussd = input("USSD: ")
+if ussd == "*312#":
+    print("""
+        1. Buy Data
+        2. Check balance
+    """)
+
+else:
+    print("Invalid ussd code")
+    
+    
+# Build a grading system 
+# 70 - 100 (A)
+# 60 - 69 (B)
+# 50 - 59 (C)
+# 45 - 49 (D)
+# 40 - 44 (E)
+# 0 - 39 (F)  
