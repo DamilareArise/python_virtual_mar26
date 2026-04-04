@@ -154,15 +154,32 @@ name = None
 
 
 # USSD app
-ussd = input("USSD: ")
-if ussd == "*312#":
-    print("""
-        1. Buy Data
-        2. Check balance
-    """)
+# ussd = input("USSD: ")
+# if ussd == "*312#":
+#     print("""
+#         1. Buy Data
+#         2. Check balance
+#     """)
+#     choice = input("Choice: ")
+#     if choice == '1':
+#         print("Buy Data")
+        
+#     elif choice == '2':
+#         print('check blance')
+#     else:
+#         print('Invalid input')
+        
+# elif ussd == '*310#':
+#     print("Your balance is #100.00")
 
-else:
-    print("Invalid ussd code")
+# elif ussd == '*121#':
+#     print("""
+#         1. Data for me
+#         2. get plan  
+#     """)
+
+# else:
+#     print("Invalid ussd code")
     
     
 # Build a grading system 
@@ -172,3 +189,76 @@ else:
 # 45 - 49 (D)
 # 40 - 44 (E)
 # 0 - 39 (F)  
+
+
+# 4. logical operator: AND, OR, NOT
+"""
+A       B       AND     OR      NOT A
+0       0       0       0       1
+0       1       0       1       1
+1       0       0       1       0
+1       1       1       1       0
+"""
+
+rice = True
+beans = False
+
+# print(rice and beans)
+# print(rice or beans)
+# print(not rice)
+
+# if not rice:
+#     print("There is no rice")
+# else:
+#     print('Rice is available')
+
+
+# score = float(input("Score: "))
+# if score >= 70 and score <= 100:
+#     print('A')
+# elif score >= 60 and score <= 69:
+#     print('B')
+# elif score >= 50 and score <= 59:
+#     print('C')
+# elif score >= 45 and score <= 49:
+#     print('D')
+# elif score >= 40 and score <= 44:
+#     print('E')
+# elif score >= 0 and score <= 39:
+#     print('F')
+# else:
+#     print('Invalid score')
+
+# 5. identity operator: is, is not
+# val = 4
+# val2 = 5
+# print(val is not val2)
+
+# 6. membership operator: in, not in
+fruits = ['apple', 'orange', 'mango']
+# print('cherry' in fruits)
+# print('cherry' not in fruits)
+
+# 7. bitwise operator
+    # & -> and
+    # | -> or
+    # ~ -> not
+    # ^ -> XOR
+    
+print(bin(10))   # 1   0   1   0
+
+print(bin(5))    #     1   0   1
+
+print(bin(2))    #         1   0
+
+# print(10 & 5) # 0
+
+# print(10 | 5) # 1    1    1   1
+
+# print(10 | 2)   # 1    0    1   0
+
+# print(10 ^ 2)   # 1    0    0   0
+
+
+
+# build simple calculator
