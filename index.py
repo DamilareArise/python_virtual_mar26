@@ -245,11 +245,11 @@ fruits = ['apple', 'orange', 'mango']
     # ~ -> not
     # ^ -> XOR
     
-print(bin(10))   # 1   0   1   0
+# print(bin(10))   # 1   0   1   0
 
-print(bin(5))    #     1   0   1
+# print(bin(5))    #     1   0   1
 
-print(bin(2))    #         1   0
+# print(bin(2))    #         1   0
 
 # print(10 & 5) # 0
 
@@ -260,5 +260,54 @@ print(bin(2))    #         1   0
 # print(10 ^ 2)   # 1    0    0   0
 
 
-
+# Assignment 
 # build simple calculator
+
+# Python Strings 
+var = "Mango, is a kind of Fruit."  # ['M', 'a', 'n', 'g', 'o']
+# print(var[0])
+# print(var[-1])
+# print(len(var))
+# print(var)
+# print(var.lower())  
+# print(var.capitalize())
+# print(var.upper())
+# print(var.title())
+
+# print("What is the capital of Nigeria a.) Ikeja b.) Abuja")
+# ans = input("Ans: ").strip()
+# if ans.lower() == 'b' or ans.capitalize() == 'Abuja':
+#     print("correct")
+# else:
+#     print('wrong')
+
+# print(var.strip())
+# print(var.strip(')*#$'))
+
+# print(var.split(','))
+
+# task
+# build a word counter
+
+# essay = input("Essay: ").strip()
+# no_of_words = len(essay.split())
+# print("Words:",no_of_words)
+
+# li = ['Mango', 'is', 'a', 'kind', 'of', 'Fruit.']
+# print(" + ".join(li))
+
+# print(var.startswith('Mango'))
+# print(var.endswith('Mango'))
+
+# print(var.find('isss'))
+
+# build an email validator using .find()
+
+# special character 
+# \n => nextline
+# \r => return
+# \b => backspace
+# \t => tab
+# \ => escape character
+# r => raw string  
+# print(r"Hello\tWorld")
