@@ -311,3 +311,130 @@ var = "Mango, is a kind of Fruit."  # ['M', 'a', 'n', 'g', 'o']
 # \ => escape character
 # r => raw string  
 # print(r"Hello\tWorld")
+
+
+# Python Collections/Array
+# 1. list - [] or list()
+# - ordered, mutable/changeable, indexed, allows duplicate
+cars = ['Audi', 'BMW', 'Toyota', 'Benz', 'Benz', 'Range Rover']
+# print(cars[-2])
+# print(cars[0:4])
+# print(cars[0][1])
+# print(cars[2][-1])
+
+# cars[0] = 'Ferrari'
+# print(cars)
+
+# cars.append('Ferrari')
+# cars.insert(0, 'Ferrari')
+new_cars = ['Ferrari', 'Lambo']
+# cars.extend('Ferrari')
+# cars.append(new_cars)
+
+# cars.pop(2)
+# cars.clear()
+# cars.remove('Toyotas')
+# print(cars)
+
+# print(cars.index('Toyota'))
+
+# store = []
+
+# while True:
+#     print("""
+#         1. Add an Item
+#         2. Remove an Item 
+#         #. Exit
+#     """)
+#     choice = input("Choice: ") 
+#     if choice == '1':
+#         item = input("Item: ").strip().title()
+#         store.append(item)
+#         print(store)
+#     elif choice == '2':
+#         print(store)
+#         # ind = int(input("Index: "))
+#         # store.pop(ind)
+        
+#         item = input('Item: ').strip().title()
+#         if item in store:
+#             confirm = input("Proceed (yes/no): ").strip().lower()
+#             if confirm == 'yes':
+#                 store.remove(item)
+#                 print(f"{item} removed from store.")
+#             else: 
+#                 print("Operation terminated")
+#         else: 
+#             print(f"{item} is not in the store")
+    
+#     elif choice == '#': 
+#         print('Bye..')
+#         exit()
+    
+#     else:
+#         print("Invalid Option")
+
+
+
+# 2. tuple () or tuple()
+# - ordered, indexed, allows duplicate but it is immutable/unchangeable
+cars = ('Audi', 'BMW', 'Toyota', 'Benz', 'Ferrari')
+# print(cars[0: 4])
+# cars = list(cars)
+# cars[0] = "Ferrari"
+# print(cars)
+
+# Unpacking
+# a, b, c = cars
+# *a, b, c = cars
+# a, b, *c = cars
+
+# print(b)
+# print(cars.index('BMW'))
+
+
+
+
+# 3. set 
+# 4. dictionary
+
+
+# Python Loop 
+# 1. For Loop : It iterate over a sequence(e.g String, list e.t.c)
+# cars = ['Audi', 'BMW', 'Toyota', 'Benz']
+# for item in cars:
+#     print(f"The {item} is one of my cars")
+#     print('--------')
+
+# for x in range(1, 7):
+#     print(x, 'Times Table')
+    
+#     for y in range(1, 13):
+#         print(f"{x} x {y} = {x*y}")
+
+
+# 2. While Loop : It works based on a condition
+
+# x = 10
+# while x > 0:
+#     print(x)
+#     x -= 1
+    
+# plates = 10 
+# while plates > 0:
+#     user = input("Do you want to eat (yes/no): ").strip().lower()
+#     if user == 'no':
+#         print('skipping')
+#         continue
+    
+#     plates -= 1
+#     print(f'Take your food, it remains {plates} plates of food')
+    
+#     if plates == 2:
+#         break
+    
+# else:
+#     print("Food has finished!")
+
+
+# Assignment - Build a simple Todo application. add todo, delete todo, clear all, view todo, and edit todo
