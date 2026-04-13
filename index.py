@@ -392,10 +392,66 @@ cars = ('Audi', 'BMW', 'Toyota', 'Benz', 'Ferrari')
 # print(b)
 # print(cars.index('BMW'))
 
+scores = [23, 45, 22, 50]
+# print(sum(scores))
+# print(min(scores))
+# print(max(scores))
+
+# print(sum(scores)/len(scores))
+
+# items = ['Fufu', 'Efo', 'Eja panla']
+# prices = [500, 400, 1500]
+# print(zip(items, prices))
+# for x in zip(items, prices):
+#     print(x)
+
+# for item, price in zip(items, prices):
+#     # print(price)
+#     print(f"{item} cost #{price}")
 
 
+# items_prices = [('Fufu', 500),('Efo', 400),('Eja panla', 1500)]
+# for item, price in items_prices:
+#     print(price)
 
-# 3. set 
+
+# exams = [
+#     ('1. What is the capital of Nigeria a. Abuja b. Tokyo', 'a'),
+#     ('2. What is the capital of Japan a. Abuja b. Tokyo', 'b')
+# ]
+
+# score = 0
+# for ques, ans in exams:
+#     print(ques)
+#     user_ans = input('Answer: ').strip().lower()
+#     if user_ans == ans:
+#         print('Correct')
+#         score +=5
+#     else:
+#         print('Wrong')
+
+# print(f"Score: {score}")
+
+
+# 3. set {} or set()
+# - unordered, unindexed, immutable/unchangeable, doesn't allow duplicate
+cars = {'Audi', 'BMW', 'Toyota', 'Benz', 'Ferrari', 'Benz'}
+# cars.add('Range rover')
+# cars.update(["Range rover", 'Ford'])
+# cars.pop()
+# cars.remove('Audia')
+# cars.discard('Audia')
+# print(cars)
+
+setA = {1, 3, 5, 6, 2, 7, 9, 8}
+setB = {2, 3, 4, 10,}
+
+# print(setA.union(setB))
+
+# print(setA.intersection(setB))
+# print(setA.difference(setB))
+# print(setA - setB)
+
 # 4. dictionary
 
 
@@ -437,4 +493,6 @@ cars = ('Audi', 'BMW', 'Toyota', 'Benz', 'Ferrari')
 #     print("Food has finished!")
 
 
-# Assignment - Build a simple Todo application. add todo, delete todo, clear all, view todo, and edit todo
+# Assignment - Build a simple Todo application. add todo, delete todo, clear all, view todo, and edit 
+
+
