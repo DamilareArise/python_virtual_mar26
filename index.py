@@ -625,3 +625,81 @@ db = [
 # Assignment - Build a simple Todo application. add todo, delete todo, clear all, view todo, and edit 
 
 
+
+
+
+# Python function 
+
+# 1. declaration stage``
+# 2. definition stage
+# 3. invokation stage
+
+
+def callMe():
+    print("calling.....")
+    
+# callMe()
+
+
+def callMe(user):
+    print(f"calling {user}...")
+
+# callMe(user="Joseph")
+
+
+def add(a, b=10):
+    print(f"Result: {a+b}")
+
+# add(1)
+
+
+# task: create a function that calculate the 
+# 1. Area of a circle
+# 2. Area of a Square
+
+def AreaOfCircle(radius: int|float = 5, pi: float = 3.142 ) -> int|float:
+    """
+    This function calculate the area of a circle
+    """
+    result = pi * (radius ** 2)  
+    print(round(result, 2))
+    
+# AreaOfCircle()
+
+
+# task: build a simple calculator using the fuction approach
+
+def home():
+    print("""
+        1. Addition
+        2. Subtraction
+        #. Exit 
+    """)
+    choice = input("Choice: ")
+    if choice == '1':
+        add()
+    elif choice == '2':
+        subtract()
+    elif choice == "#":
+        print("Bye!")
+        exit()
+    else:
+        print("Invalid...")
+        home()
+        
+def add():
+    val1 = float(input("value 1: "))
+    val2 = float(input("value 2: "))
+    result = val1 + val2
+    print(result)
+    home()
+    
+    
+def subtract():
+    val1 = float(input("value 1: "))
+    val2 = float(input("value 2: "))
+    result = val1 - val2
+    print(result)
+    home()
+    
+home()
