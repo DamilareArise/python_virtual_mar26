@@ -452,7 +452,136 @@ setB = {2, 3, 4, 10,}
 # print(setA.difference(setB))
 # print(setA - setB)
 
-# 4. dictionary
+# 4. dictionary - {key:value, key:value}
+car = {
+    "brand": "Lexus",
+    "model": "Rx 350",
+    "color": "White",
+    "transmission": "Automatic",
+    "iSBrandNew": False,
+    # "owner": {
+    #     "fullname": "John Doe",
+    #     "gender": "Male",
+    #     "address": {
+    #         "state": "Texas",
+    #         "country": "US"
+    #     }
+    # }
+}
+
+# print(car['brands'])
+# car['model'] = "Lx 350"
+# car['iSBrandNew'] = True
+# car['engineType'] = "v6"
+# print(car)
+
+# print(car['owner']['address']['country'])
+
+
+
+# print(car.keys())
+
+# for key in car.keys():
+#     print(key)
+
+# print(car.values())
+
+# for val in car.values():
+#     print(val)
+
+# print(car.items())
+
+# for key, val in car.items():
+#     print(key, val)
+
+
+# exams = {
+#     '1. What is the capital of Nigeria a. Abuja b. Tokyo': 'a',
+#     '2. What is the capital of Japan a. Abuja b. Tokyo': 'b'
+# }
+
+# for ques, ans in exams.items():
+#     print(ques)
+#     user_ans = input("Ans: ")
+#     if user_ans == ans:
+#         print("correct")
+#     else:
+#         print("wrong")
+
+# print(car.get('brands', 'Not found'))
+# car.update({"brand": "Toyota"})
+
+# car.pop('brand')
+# car.popitem()
+# print(car)
+
+
+# task: create a simple register and login function using dict as your db structure
+
+# db = {
+#     "ade@gmail.com": ("ade ojo", "ade@gmail.com", "1234"),
+#     "ife@gmail.com": ("ade ife", "ife@gmail.com", "12345"),
+# }
+# db['ade@gmail.com'][2]
+# print("ife@gmail.com" not in db)
+
+# db = {}
+# while True:
+#     print("""
+#         1. Sign up 
+#         2. Sign in
+#         #. Exit
+#     """)
+#     option = input("Option: ")
+#     if option == "1":
+#         print("Sign up")
+#         fullname = input("Fullname: ").strip().title()
+#         email = input("Email: ").strip().lower()
+#         password = input("Password: ")
+        
+#         if email in db:
+#             print("Email already exist")
+#             continue
+        
+#         db.update({email:(fullname, email, password)})
+#         # db[email] = (fullname, email, password)
+#         print("registration successfull")
+        
+#     elif option == "2":
+#         print("Sign in")
+#         email = input("Email: ").strip().lower()
+#         password = input("Password: ")
+#         if email in db and password == db[email][2]:
+#             print("Login in successful")
+            
+#         else:
+#             print("Invalid email or password")
+
+#     elif option == "#":
+#         exit()
+    
+#     else:
+#         print("Invalid option")
+
+
+
+
+# classwork : create a simple register and login function using;
+db = [
+    {
+        "fullname": "Ade ojo",
+        "email": "ade@gmail.com",
+        "password": "1234"    
+    },
+    {
+        "fullname": "ola ojo",
+        "email": "ola@gmail.com",
+        "password": "1234"
+    }
+]
+
+# db = []
+
 
 
 # Python Loop 
