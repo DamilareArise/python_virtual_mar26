@@ -702,4 +702,97 @@ def subtract():
     print(result)
     home()
     
-home()
+# home()
+
+# Global and local variables
+
+val = 5 #global
+
+def sum():
+    global val
+    # b = 10  # local
+    # print(b + val)
+    
+    val += 5
+    print(val)
+    
+def dif():
+    # print(b - val)
+    global val
+    
+    val -= 5
+    print(val)
+    
+# sum()
+# dif()
+
+db = []
+balance = 0
+
+def menu():
+    print(f"""
+        Account Balance: #{balance}  
+          
+        1. Deposit
+        2. Withdraw
+        3. Check balance 
+        #. Exit 
+    """)
+    
+    choice = input("Choice: ")
+    if choice == '1':
+        deposit()
+        
+    elif choice == '2':
+        withdraw()
+    
+    elif choice == '3':
+        pass
+    
+    elif choice == "#":
+        exit()
+    
+    else:
+        print("Invalid..")
+        menu()
+    
+def deposit():
+    global balance
+    
+    amount = float(input("Amount: "))
+    if amount < 0:
+        print("Invalid amount")  
+    else:
+        balance += amount
+        print("Deposit successfull")
+        
+    menu()
+    
+def withdraw():
+    global balance
+    
+    amount = float(input("Amount: "))
+    if amount < 0:
+        print("Invalid amount") 
+    
+    elif amount > balance:
+        print("Insufficient fund")
+     
+    else:
+        balance -= amount
+        print("withdrawal successfull")
+        
+    menu()
+    
+# menu()
+
+
+# return function
+
+# def getScore():
+#     return 70
+
+# print(getScore())
+
+
+
