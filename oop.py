@@ -68,5 +68,123 @@ class Calculator:
         self.home()
         
         
-calc1 = Calculator()
-calc1.home()
+# calc1 = Calculator()
+# calc1.home()
+
+
+
+
+# name = "stephen"
+# name2 = set()
+# print(type(name))
+
+    
+
+class Human:
+    complexion = "Dark"
+    name = None
+    gender = "Male"
+    
+    def __init__(self, username):
+        # print("welcome")
+        self.name = username
+        
+    
+    def walk(self):
+        print(f"{self.name} is Walking...")
+        
+    def respiration(self):
+        print("Let me breathe")
+    
+    
+olisa =  Human('Olisa')
+tolulope = Human('Tolulope')
+# print(olisa == tolulope)
+
+# tolulope.gender = "Female"
+# tolulope.name = "Tolulope"
+# print(tolulope.gender)
+
+# olisa.walk()
+
+# tolulope.walk()
+
+
+
+
+class BankAccount:
+    __account_name = None
+    __balance = 0.0
+    
+    def __init__(self, name):
+        self.__account_name = name
+    
+    def menu(self):
+        print(f"""
+        Welcome back {self.__account_name}
+        
+            1. Deposit
+            2. Withdrawal
+            3. Check balance
+            #. Exit
+        """)
+        option = input("Option: ")
+        if option == "1":
+            self.__deposit()
+        elif option == "2":
+            self.__withdraw()
+        elif option == '3':
+            self.__check_balance()
+        elif option == "#":
+            print("Goodbye!")
+            exit()
+        else:
+            print("Invalid option")
+            self.menu()
+            
+    def __deposit(self):
+        amount = float(input("Amount: "))
+        if amount < 1:
+            print("amount can't be less that 1.")
+            self.menu()
+        
+        self.__balance += amount
+        print("Deposit successfull")
+        self.menu()
+    
+    def __withdraw(self):
+        amount = float(input("Amount: "))
+        if amount < 1:
+            print("amount can't be less that 1.")
+            self.menu()
+        
+        if amount > self.__balance:
+            print("Insufficient fund")
+            self.menu()
+        
+        
+        self.__balance -= amount
+        print("Withdrawal successfull")
+        self.menu()
+    
+    def __check_balance(self):
+        print(f"Balance: ${self.__balance}")
+        self.menu()
+    
+    
+
+ade_account = BankAccount('Ade')
+
+# print(ade_account.__balance)
+# ade_account.__balance = 100000
+# ade_account.menu()
+# ade_account.__withdraw()
+
+# pillars of OOP
+# 1. encapsulation :- public, private, protected, static
+# 2. inheritance
+
+
+
+
+
