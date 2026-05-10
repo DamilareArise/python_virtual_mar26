@@ -44,6 +44,13 @@ class Config:
         
         return password1
     
+    def login(self, email, password):
+        if email == "" or password == "":
+            return "All fields are required. Try again"
+    
+    def perform_transaction():
+        pass
+    
 
 # obj = Config()   
 # res = obj.register("Ade Ola","ade@gmail.com","1234")
@@ -79,6 +86,16 @@ class BankApp(Config):
         print(response)
         self.menu()
 
-
+    def signin(self):
+        pass
+    
+    def dashboard(self, user):
+        
+        print("""
+           1. Deposit
+           2. Withdraw   
+        """)
+        
+        
 bk = BankApp()
 bk.menu()
