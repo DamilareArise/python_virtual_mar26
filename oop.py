@@ -53,18 +53,27 @@ class Calculator:
             self.home()
             
     def add(self):
-        val1 = float(input("value 1: "))
-        val2 = float(input("value 2: "))
-        result = val1 + val2
-        print(result)
-        self.home()
+        try:
+            val1 = float(input("value 1: "))
+            val2 = float(input("value 2: "))
+            result = val1 + val2
+        except Exception as e:
+            print("Error:", e)
+        else:
+            print(result)
+        finally:
+            self.home()
         
         
     def subtract(self):
-        val1 = float(input("value 1: "))
-        val2 = float(input("value 2: "))
-        result = val1 - val2
-        print(result)
+        try:
+            val1 = float(input("value 1: "))
+            val2 = float(input("value 2: "))
+            result = val1 - val2
+            print(result)
+        except Exception as e:
+            print("Error:", e)
+            
         self.home()
         
         
