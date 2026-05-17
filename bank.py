@@ -92,7 +92,7 @@ class BankApp(Config):
     def dashboard(self, user):
         
         print("""
-           1. Deposit
+           1. Deposit ✅💻
            2. Withdraw   
         """)
         
